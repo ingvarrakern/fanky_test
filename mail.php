@@ -21,7 +21,7 @@ function sendMail(User $user) {
     $mail->SMTPAuth = true;
 //Provide username and password     
     $mail->Username = "fanky.test@yandex.ru";
-    $mail->Password = "Print555";
+    $mail->Password = "";
 //If SMTP requires TLS encryption then set it
     $mail->SMTPSecure = "ssl";
 //Set TCP port to connect to
