@@ -25,13 +25,14 @@ function sendBE(){
         var formData = $("#formRegister").serialize();
             $.ajax({
                 url: 'registrationController.php',
-                type: "GET",
+                type: "POST",
                 data: formData,
                 beforeSend: function () {
                     $('#buttonSubmit').attr('disabled', 'disabled');
                 }
             }).done(function (result) {
                 alert("Ваш запрос был обработан успешно");
+                
                 $("#exampleInputPhone").val("")
                 $("#exampleInputName").val("")
                 $("#exampleInputEmail").val("")
