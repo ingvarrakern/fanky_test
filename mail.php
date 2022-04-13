@@ -37,7 +37,7 @@ function sendMail(User $user) {
 //Send HTML or Plain Text email
     $mail->isHTML(true);
 
-    $mail->Subject = "Письмо от Funky test";
+    $mail->Subject = "Message from Funky test";
 
     $body = "Пользователь успешно создан <br>"
             . "Email: ".$user->getEmail()." <br>"
